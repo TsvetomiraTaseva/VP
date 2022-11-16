@@ -1,0 +1,5 @@
+number = input("Enter number: ")
+tup1 = tuple(number)
+tup2 = tuple(number[::-1])
+print(tup1)
+print(tup2)
