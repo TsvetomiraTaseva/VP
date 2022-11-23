@@ -1,17 +1,32 @@
 b = input("Enter square, rectangle or triangle: ")
-#area = 0
-if b == "square":
-    def area_square(a):
-        a = float(input("Enter a num: "))
-        area = a * a
-        return area
-print(f"Area = {area_square(b)}")
 
+
+def area_square(a):
+    area = a ** 2
+    return area
+
+
+def area_rectangle(a, b):
+    area = a * b
+    return area
+
+
+def area_triangle(a, b):
+    area = (a * b)/2
+    return area
+
+
+if b == "square":
+    a = float(input("Enter number: "))
+    print(f"Area of square is {area_square(a)}")
 elif b == "rectangle":
-    def area_rectangle(a, b):
-         a = float(input("Enter a num:  "))
-         b = float(input("Enter a second num: "))
-        area = a * b
-         return area
-print(f"Area = {area_rectangle(b)}")
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+    print(f"Area og rectangle is {area_rectangle(a, b)}")
+elif b == "triangle":
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+    print(f"Area og rectangle is {area_triangle(a, b)}")
+
+
 
